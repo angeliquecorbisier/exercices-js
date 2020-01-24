@@ -12,14 +12,13 @@
 
 // pas du tout fait seule mais compris !
 
-document.getElementById("pass-one").addEventListener("input", function(e) {
+document.getElementById("pass-one").addEventListener("input", function(xblock) {
 
-    if (e.target.value.length >= 10) {
-      document.querySelector("#pass-one").addEventListener("keypress", e => e.preventDefault());
+    if (xblock.target.value.length >= 10) {
+      document.querySelector("#pass-one").addEventListener("keypress", xblock => xblock.preventDefault());
     }
 
-    
     let indicator = document.querySelector(".indicator");
-    let length = e.target.value.length;
+    let length = xblock.target.value.length;
     indicator.textContent = length;
   });
