@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 
-//pas du tout fait seule....mais compris ! (problème pour la condition concernant les deux chiffres)
+// !!!!!!!!!!!!!
 
 inputvalid = document.querySelector(".indicator");
 

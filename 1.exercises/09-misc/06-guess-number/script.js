@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-const   random = Math.floor(Math.random()*50);
+const random = Math.floor(Math.random()*50);
 
 
     const numberguess = () => {

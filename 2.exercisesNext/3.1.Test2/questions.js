@@ -1,43 +1,51 @@
-let CreationTableauLangages =  () => {
+let CreationTableauLangages = () => {
+    return ["Html", "CSS", "Java", "PHP"];
+}
+
+let CreationTableauNombres = () => {
+    return [0, 1, 2, 3, 4, 5];
+}
+
+let RemplacementElement = (langages) => {
+    langages[2] = "Javascript";
+    return langages
+}
+
+let AjoutElementLangages = (langages) => {
+    langages.push("Ruby");
+    langages.push("Python")
+    return langages;
+}
+
+let AjoutElementNombres = (nombres) => {
+    nombres.unshift(-1);
+    nombres.unshift(-2);
+    return nombres;
 
 }
 
-let CreationTableauNombres =  () => {
-
+let SuppressionPremierElement = (langages) => {
+    langages.shift();
+    return langages;
 }
 
-let RemplacementElement =  (langages) => {
-
+let SuppressionDernierElement = (langages) => {
+    langages.pop();
+    return langages;
 }
 
-let AjoutElementLangages =  (langages) => {
-
+let ConversionChaineTableau = (reseaux_sociaux_chaine) => {
+    return reseaux_sociaux_chaine.split(',');
 }
 
-let AjoutElementNombres =  (nombres) => {
-
+let ConversionTableauChaine = (langages) => {
+    return langages.join(',');
 }
 
-let SuppressionPremierElement =  (langages) => {
-
+let TriTableau = (reseaux_sociaux) => {
+    return reseaux_sociaux.sort();
 }
 
-let SuppressionDernierElement =  (langages) => {
-
-}
-
-let ConversionChaineTableau =  (reseaux_sociaux_chaine) => {
-
-}
-
-let ConversionTableauChaine =  (langages) => {
-
-}
-
-let TriTableau =  (reseaux_sociaux) => {
-
-}
-
-let InversionTableau =  (reseaux_sociaux) =>{
-
+let InversionTableau = (reseaux_sociaux) => {
+    return reseaux_sociaux.reverse();
 }

@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 
-// pas du tout fait seule mais compris !
+// !!!!!!!
 
 document.getElementById("pass-one").addEventListener("input", function(xblock) {
 

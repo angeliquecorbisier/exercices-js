@@ -12,7 +12,7 @@
 (() => {
     document.getElementById("run").addEventListener("click", () => {
 
-        var nbr = prompt ('Rentrer votre mercedes')
+        var nbr = prompt ('Veuillez rentrer un nombre')
         
         if (nbr%2 == 0)
         {
