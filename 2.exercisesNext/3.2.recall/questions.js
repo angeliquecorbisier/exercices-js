@@ -281,7 +281,7 @@ let allAnagram = function(string) {
     return Object.keys(result);
 };
 
-let findAnagrams = (string) => {
+        let findAnagrams = (string) => {
     return allAnagram(string);
 }
 
