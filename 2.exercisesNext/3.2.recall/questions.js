@@ -2,10 +2,11 @@ let selectElementsStartingWithA = (array) => {
     return array.filter(word => word[0] == 'a');
 }
 
-let selectElementsStartingWithVowel = (array) => {
-    return array.filter(word => word[0] == 'a' || word[0] == 'o' || word[0] == 'i' || word[0] == 'e' || word[0] == 'u' || word[0] == 'y');
+let selectElementsStartingWithVowel = (array) => array.filter((element) => element.match(/^[aeiouy]/));
+    //return array.filter(word => word[0] == 'a' || word[0] == 'o' || word[0] == 'i' || word[0] == 'e' || word[0] == 'u' || word[0] == 'y');
+     
+    
 
-}
 
 let removeNullElements = (array) => {
     return array.filter(word => word != null);
@@ -59,24 +60,22 @@ let makeNegative = (number) => {
 
 let numberOfPalindromes = (array) => {
 
-    let palindromeArr = [];
+    let palindromeArr=0;
 
     array.forEach(word => {
-        let pword = word.split("");
-        pword=pword.reverse();
-        pword=pword.join("");
-        if(word == pword) {
-            palindromeArr.push(word);
+        if(word == word.split('').reverse().join('')) {
+            palindromeArr++;
         }
     });
+        return palindromeArr;
 
-  return palindromeArr.length;
 
 }
     
 
 
 let shortestWord = (array) => {
+//let shortesWord = (array) => array.map(element => element.split("")).sort((a,b)=>a.length - b.length)[0].join(""); 
 
     shortestWord = array.reduce(function(prev, next) {
         if (prev.length < next.length) {
@@ -92,7 +91,10 @@ let shortestWord = (array) => {
   
 }
 
+
 let longestWord = (array) => {
+    //let longestWord = (array) => array.map(element => element.split("")).sort((a,b)=>b.length - a.length)[0].join(""); 
+
 
     let word ="";
     for (let i = 0; i < array.length; i++) {
@@ -234,6 +236,8 @@ let titleize = (string) => {
 
 
 let checkForSpecialCharacters = (string) => {
+
+    // /\w/.test(string); 
 
     let pattern = /[a-zA-Z]+[(@!#\$%\^\&*\)\(+=._-]{1,}/; 
         if ( string && string.length > 2 && pattern.test(string)) {
